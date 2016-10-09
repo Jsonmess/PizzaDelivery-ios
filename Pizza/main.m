@@ -9,10 +9,13 @@
 #import <UIKit/UIKit.h>
 
 #import "PPAppDelegate.h"
+#import <RestKit/RestKit.h>
 
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
+        
+        RKLogConfigureFromEnvironment();
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([PPAppDelegate class]));
     }
 }

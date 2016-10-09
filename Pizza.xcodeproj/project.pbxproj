@@ -18,9 +18,14 @@
 		211C9A5B16D6D76A0051B0FA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 211C9A5A16D6D76A0051B0FA /* Default-568h@2x.png */; };
 		211C9A5E16D6D76A0051B0FA /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211C9A5C16D6D76A0051B0FA /* MainStoryboard.storyboard */; };
 		211C9A6116D6D76A0051B0FA /* PPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 211C9A6016D6D76A0051B0FA /* PPViewController.m */; };
+		21B0E13B16D6DAA10080F973 /* Pizza.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 21B0E13916D6DAA10080F973 /* Pizza.xcdatamodeld */; };
+		21B0E13E16D6DAFD0080F973 /* Pizza.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B0E13D16D6DAFD0080F973 /* Pizza.m */; };
+		21B0E14116D6DB980080F973 /* PPPizzaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B0E14016D6DB980080F973 /* PPPizzaViewController.m */; };
+		B704399181424D30AA0076CE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C18A011D7B64CF09B032744 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C18A011D7B64CF09B032744 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		211C9A4116D6D7690051B0FA /* Pizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		211C9A4416D6D7690051B0FA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		211C9A4616D6D7690051B0FA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,6 +42,12 @@
 		211C9A5D16D6D76A0051B0FA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		211C9A5F16D6D76A0051B0FA /* PPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPViewController.h; sourceTree = "<group>"; };
 		211C9A6016D6D76A0051B0FA /* PPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PPViewController.m; sourceTree = "<group>"; };
+		21B0E13A16D6DAA10080F973 /* Pizza.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pizza.xcdatamodel; sourceTree = "<group>"; };
+		21B0E13C16D6DAFD0080F973 /* Pizza.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pizza.h; sourceTree = "<group>"; };
+		21B0E13D16D6DAFD0080F973 /* Pizza.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pizza.m; sourceTree = "<group>"; };
+		21B0E13F16D6DB980080F973 /* PPPizzaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPizzaViewController.h; sourceTree = "<group>"; };
+		21B0E14016D6DB980080F973 /* PPPizzaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPizzaViewController.m; sourceTree = "<group>"; };
+		6CDBA6FD4E72443584052489 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +58,7 @@
 				211C9A4516D6D7690051B0FA /* UIKit.framework in Frameworks */,
 				211C9A4716D6D7690051B0FA /* Foundation.framework in Frameworks */,
 				211C9A4916D6D7690051B0FA /* CoreGraphics.framework in Frameworks */,
+				B704399181424D30AA0076CE /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +71,7 @@
 				211C9A4A16D6D7690051B0FA /* Pizza */,
 				211C9A4316D6D7690051B0FA /* Frameworks */,
 				211C9A4216D6D7690051B0FA /* Products */,
+				6CDBA6FD4E72443584052489 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +89,7 @@
 				211C9A4416D6D7690051B0FA /* UIKit.framework */,
 				211C9A4616D6D7690051B0FA /* Foundation.framework */,
 				211C9A4816D6D7690051B0FA /* CoreGraphics.framework */,
+				1C18A011D7B64CF09B032744 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -89,6 +103,11 @@
 				211C9A5F16D6D76A0051B0FA /* PPViewController.h */,
 				211C9A6016D6D76A0051B0FA /* PPViewController.m */,
 				211C9A4B16D6D7690051B0FA /* Supporting Files */,
+				21B0E13916D6DAA10080F973 /* Pizza.xcdatamodeld */,
+				21B0E13C16D6DAFD0080F973 /* Pizza.h */,
+				21B0E13D16D6DAFD0080F973 /* Pizza.m */,
+				21B0E13F16D6DB980080F973 /* PPPizzaViewController.h */,
+				21B0E14016D6DB980080F973 /* PPPizzaViewController.m */,
 			);
 			path = Pizza;
 			sourceTree = "<group>";
@@ -117,6 +136,7 @@
 				211C9A3D16D6D7690051B0FA /* Sources */,
 				211C9A3E16D6D7690051B0FA /* Frameworks */,
 				211C9A3F16D6D7690051B0FA /* Resources */,
+				866E37FD20B9448789978E19 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -169,6 +189,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		866E37FD20B9448789978E19 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		211C9A3D16D6D7690051B0FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -177,6 +214,9 @@
 				211C9A5116D6D7690051B0FA /* main.m in Sources */,
 				211C9A5516D6D76A0051B0FA /* PPAppDelegate.m in Sources */,
 				211C9A6116D6D76A0051B0FA /* PPViewController.m in Sources */,
+				21B0E13B16D6DAA10080F973 /* Pizza.xcdatamodeld in Sources */,
+				21B0E13E16D6DAFD0080F973 /* Pizza.m in Sources */,
+				21B0E14116D6DB980080F973 /* PPPizzaViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +300,7 @@
 		};
 		211C9A6516D6D76A0051B0FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CDBA6FD4E72443584052489 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pizza/Pizza-Prefix.pch";
@@ -271,6 +312,7 @@
 		};
 		211C9A6616D6D76A0051B0FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CDBA6FD4E72443584052489 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Pizza/Pizza-Prefix.pch";
@@ -299,8 +341,22 @@
 				211C9A6616D6D76A0051B0FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		21B0E13916D6DAA10080F973 /* Pizza.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				21B0E13A16D6DAA10080F973 /* Pizza.xcdatamodel */,
+			);
+			currentVersion = 21B0E13A16D6DAA10080F973 /* Pizza.xcdatamodel */;
+			path = Pizza.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 211C9A3916D6D7690051B0FA /* Project object */;
 }

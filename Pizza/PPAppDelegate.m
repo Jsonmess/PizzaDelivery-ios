@@ -7,12 +7,29 @@
 //
 
 #import "PPAppDelegate.h"
+#import <RestKit/RestKit.h>
+#import "Pizza.h"
 
 @implementation PPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    RKObjectManager* objectManager = [RKObjectManager objectManagerWithBaseURLString:@"http://localhost:8080/PizzaDelivery/"];
+    RKManagedObjectStore* objectStore = [RKManagedObjectStore objectStoreWithStoreFilename:@"Pizza.sqlite"];
+    objectManager.objectStore = objectStore;
+    objectManager.serializationMIMEType = RKMIMETypeJSON;
+
+    RKManagedObjectMapping *pizzaMapping = [RKManagedObjectMapping mappingForClass:[Pizza class] inManagedObjectStore:objectStore];
+    [pizzaMapping mapKeyPath:@"id" toAttribute:@"id"];
+    [pizzaMapping mapKeyPath:@"version" toAttribute:@"version"];
+    [pizzaMapping mapKeyPath:@"diameter" toAttribute:@"diameter"];
+    [pizzaMapping mapKeyPath:@"price" toAttribute:@"price"];
+    
+    pizzaMapping.primaryKeyAttribute = @"id";
+    
+    [objectManager.mappingProvider addObjectMapping:pizzaMapping];
+    
     return YES;
 }
 							
